@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1c1c1c;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px #000;
+}
+
+.scoreboard {
+    text-align: center;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#startGameBtn,
+#guessBtn {
+    background: #4caf50;
+    color: white;
+}
+
+#hintBtn {
+    background: #ff9800;
+    color: white;
+}
+
+#lifeBtn {
+    background: #2196f3;
+    color: white;
+}
+
+.levels label {
+    display: block;
+    margin: 8px 0;
+}
+
+.life-box {
+    margin-top: 15px;
+    padding: 15px;
+    background: #444;
+    border-radius: 10px;
+}
+
+.life-box button {
+    width: 100%;
+    margin-top: 10px;
+    background: #ff4081;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+#historyList {
+    padding: 10px;
+    line-height: 1.6em;
+}

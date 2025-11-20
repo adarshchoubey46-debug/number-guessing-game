@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🎮 Number Guessing Game</h1>
+
+        <!-- Highest Score + Streak Info -->
+        <div class="scoreboard">
+            <p><strong>🏆 Highest Score:</strong> <span id="highestScore">0</span></p>
+            <p><strong>🔥 Current Streak:</strong> <span id="streak">0</span></p>
+        </div>
+
+        <!-- Player Setup -->
+        <section class="card">
+            <h2>Player Setup</h2>
+
+            <label>Number of Players (1–5):</label>
+            <input type="number" id="playerCount" min="1" max="5">
+
+            <button id="createPlayersBtn">Create Player Inputs</button>
+
+            <div id="playerNames"></div>
+        </section>
+
+        <!-- Level Selection -->
+        <section class="card">
+            <h2>Choose Difficulty</h2>
+
+            <div class="levels">
+                <label><input type="radio" name="level" value="easy"> Easy (1–100)</label>
+                <label><input type="radio" name="level" value="medium"> Medium (1–70)</label>
+                <label><input type="radio" name="level" value="hard"> Hard (1–30)</label>
+            </div>
+
+            <button id="startGameBtn">Start Game</button>
+        </section>
+
+        <!-- Game Area -->
+        <section class="card" id="gameArea" style="display:none;">
+            <h2 id="playerTurn">Player Turn</h2>
+
+            <p>Enter your guess:</p>
+            <input type="text" id="guessInput">
+
+            <div class="game-buttons">
+                <button id="guessBtn">Submit Guess</button>
+                <button id="hintBtn">Hint</button>
+                <button id="lifeBtn">Life-Line</button>
+            </div>
+
+            <p id="feedback"></p>
+            <p id="attemptsLeft"></p>
+
+            <!-- Lifeline Options -->
+            <div id="lifeOptions" class="life-box" style="display:none;">
+                <h3>Select Life-Line</h3>
+                <button data-life="range">50-50 Range</button>
+                <button data-life="tens">Reveal Tens Digit</button>
+                <button data-life="extra">Extra Attempt</button>
+            </div>
+
+        </section>
+
+        <!-- History -->
+        <section class="card" id="historyBox" style="display:none;">
+            <h2>Guess History</h2>
+            <div id="historyList"></div>
+        </section>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
