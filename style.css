@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #1c1c1c;
+    background:  #FFFFFF;
     color: #fff;
 }
 
@@ -99,3 +99,4 @@ button:hover {
     padding: 10px;
     line-height: 1.6em;
 }
+
